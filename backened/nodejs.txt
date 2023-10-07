@@ -1,0 +1,92 @@
+What is node js 
+
+Node js is an open source , cross platform javascript runtime environment and library for running web applications outside the client'S browser.
+It is used for creating server side web applications
+Nodejs is perfect for data intensive applications as it uses as asynchronous event driven model
+
+Why node js
+
+It is very fast 
+Node package manager has over 50000 bundles for at the developers disposal
+Perfect for data intensive, real time web applications as node js never waits for an api to return data
+Better Synchronization of code between server and client due to same code base
+Easy for web developers to start using node js in their projects as it is a javascript library
+
+Parts of node js 
+
+1. Modules
+Modules are like javascript libraries that can be used in a node js application to include a set of functions
+To include a module in a node js application, use require() function with the papranthesis containing the name of the module
+
+// Creating a web server 
+// Include modules
+var http = reqire('http');
+var server = var.createServer(function(req,res){
+//Write code here 
+});
+server.listen(20000)
+
+Node js has many modules to provide basic functionality needed for a web application
+Some of them are -
+
+http- Includes classes methods and events to create nodejs http server
+util- Includes utility functions useful for developers
+fs - Includes events, clases and methods to deal with file I/O operations
+url - INcludes methods for url parsing
+stream- Includes methods to handle streaming data
+querysting- Includes methods to work with query string
+zlib - Includes methods to compress or decompress files
+
+2. Console- COnsole is a module that provides a way to debug similar to that of the javascript console provided by the internet browsers
+It prints messages to stdout and stderr
+// Writing hellow world to console 
+console.log("hellow wrold");
+
+3. cluster -
+Nodejs is built the concept of single- threaded programming 
+cluster is a module that allows multi-threading by creating child processes that share same server port and run simultaneously 
+
+var cluster = require('cluster');
+if(cluster.isWorking)
+{
+    console.log('child threadd');
+
+}
+else
+{
+    console.log('parent threa');
+    cluster.fork();
+    cluster.fork();
+}
+
+3. Global
+4. Error hamdling
+
+Four type of error handling - 
+a. Standard javascript errors
+b. Sytem errors
+c. User specific errors
+d. Assertion errors
+
+5. Streaming
+
+Types - 
+a. Readable
+b. Writeable
+c. Duplex
+d. Transform
+
+6. Buffer
+6. Domain
+7. DNS
+8. Debugger
+
+Express framework -
+Express is a fliexible node js web appliction framework a wide set of features to develop both web and mobile application
+
+Features of express framework 
+
+It can be used to design single page multi-page and hybrid web applications
+It allows to setup middlewares to responddd to http request
+It defines a routing rable which used to perfornm different actions based on http method and url
+It allows to dynamically render html pages based on passing argument to templetes
